@@ -1,0 +1,82 @@
+$grey-dark: #3d4449;
+$accent: #4A525D;
+$accent2: #f47810;
+$primary: darken($accent, 10%);
+$footer-background-color: $accent;
+$text: $grey-dark;
+$text-light: lighten($text, 20%);
+$text-strong: darken($text, 5%);
+$link: $accent2;
+$link-visited: lighten($accent2, 10%);
+$link-hover: lighten($accent2, 20%);
+$link-focus: $link-hover;
+$link-active: $link-hover;
+
+@import 'bulma/bulma';
+@import 'libs/mixins';
+
+html {
+  body {
+    @include font-smoothing(on);
+    .burger {
+      color: $grey-dark;
+    }
+    .navbar-item{
+      font-size: 1em;
+    }
+    .controls {
+      box-sizing: initial !important;
+    }
+    .box {
+      &.use-theme {
+        min-height: 350px;
+        max-height: 350px;
+        overflow: auto;
+        .info {
+          padding: 10px 0px;
+          border-bottom: 1px solid $grey-lighter;
+          border-top: 1px solid $grey-lighter;
+        }
+      }
+    }
+    footer {
+      color: #fff;
+      a {
+        color: #fff;
+        &:hover{
+          color: lighten($accent, 40%);
+        }
+      }
+      strong {
+        color: #fff;
+      }
+    }
+
+    #search-section {
+      display: none;
+    }
+    .search{
+      background-color: $grey-dark;
+      color: #fff;
+      input[type="text"] {
+        border: 0px;
+        border-bottom: 4px solid #fff;
+        color: #fff;
+        @include placeholder-color(#fff);
+        font-size: 3em;
+      }
+      .search-hide {
+        cursor: pointer !important;
+        pointer-events: auto !important;
+        height: 100% !important;
+      }
+      li {
+        font-size: 1.2em;
+        line-height: 2em;
+      }
+      a{
+        color: #aaa;
+      }
+    }
+  }
+}
