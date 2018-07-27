@@ -24,6 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github: utensils/kotlin-companies
 maintainers:
   - pjhampton
+  - doomspork
   - burden
 
 # Build settings

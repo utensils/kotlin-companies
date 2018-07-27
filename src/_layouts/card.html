@@ -12,7 +12,7 @@ layout: default
             <span class="icon accent"><i class="{{ site.cards.group_by.fa-style }} fa-fw fa-{{ site.cards.group_by.fa-icon }}"></i></span> <a href="/{{ site.cards.group_by.caption }}/{{ category_path | strip }}">{{ page['card'][site.cards.group_by.name] }}</a><br>
             {% for item in site.cards.meta %}
             {% if page.card[item.name] %}
-              {% if item.name == "url" %}
+              {% if item.name == "url" or item.name == "blog" or item.name == "github" %}
                 <span class="icon accent"><i class="{{ item.fa-style }} fa-fw fa-{{ item.fa-icon }}"></i></span> <a href="{{ page.card[item.name] }}">{{ page.card[item.name] | replace: "http://", "" | replace: "https://", "" | replace: "www.", "" | replace_regex: "/$", "" | truncate: 40 }}</a><br>
               {% else %}
                 <span class="icon accent"><i class="{{ item.fa-style }} fa-fw fa-{{ item.fa-icon }}"></i></span> {{ page.card[item.name] | replace: "http://", "" | replace: "https://", "" | replace: "www.", "" | replace_regex: "/$", "" | truncate: 40  }}<br>{% endif %}

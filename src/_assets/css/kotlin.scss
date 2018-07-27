@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
 $grey-dark: #3d4449;
 $accent: #4A525D;
-$accent2: #f47810;
-$primary: darken($accent, 10%);
+$grey-dark: #4A525D;
+$accent: #103559;
+$accent2: #5179BB;
+$accent3: #f47810;
+$primary: $accent;
 $footer-background-color: $accent;
 $text: $grey-dark;
 $text-light: lighten($text, 20%);
@@ -9,8 +14,10 @@ $text-strong: darken($text, 5%);
 $link: $accent2;
 $link-visited: lighten($accent2, 10%);
 $link-hover: lighten($accent2, 20%);
+$link-hover: $accent3;
 $link-focus: $link-hover;
 $link-active: $link-hover;
+$family-primary: 'Open Sans', sans-serif;
 
 @import 'bulma/bulma';
 @import 'libs/mixins';
@@ -18,6 +25,9 @@ $link-active: $link-hover;
 html {
   body {
     @include font-smoothing(on);
+    background-attachment: fixed, fixed;
+    background-image: asset_url("overlay.png"),	asset_url("sos.png");
+
     .burger {
       color: $grey-dark;
     }
@@ -26,6 +36,16 @@ html {
     }
     .controls {
       box-sizing: initial !important;
+    }
+    .title {
+      font-weight: 700;
+      &.fancy {
+        padding-bottom: 10px;
+        border-bottom: 5px solid $link-hover;
+      }
+      &.thin {
+        font-weight: 400;
+      }
     }
     .box {
       &.use-theme {
