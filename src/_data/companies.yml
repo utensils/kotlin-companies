@@ -32,3 +32,11 @@ Pinterest:
   url: https://pinterest.com
   blog: https://medium.com/@Pinterest_Engineering
   description: "Pinterest is where people discover new ideas and find inspiration to do the things they love!"
+  
+Khan Academy:
+  industry: Education
+  url: https://www.khanacademy.org
+  blog: http://engineering.khanacademy.org
+  github: https://github.com/Khan
+  location: Mountain View, California
+  description: "Khan Academy offers a free, world-class education available. Serves some user-facing requests using a Kotlin-based application"
