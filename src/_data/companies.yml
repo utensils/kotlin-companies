@@ -5,7 +5,31 @@
 #   url:
 #   github:
 #   location:
-#   description: "Company description and how Elixir is used"
+#   description: "Company description and how Kotlin is used"
+
+Citi:
+  industry: Banking
+  url: https://citi.com
+  description: "Citigroup Inc. or Citi is an American multinational investment bank and financial services corporation headquartered in New York City"
+
+Springer:
+  industry: Publishing
+  url: https://www.springer.com/
+  github: https://github.com/springernature
+  location: London, UK
+  description: "Academic journal and books publisher"
+
+Google:
+  industry: Search
+  url: https://www.google.com/
+  github: https://github.com/google
+  description: "Search the world's information, including webpages, images, videos and more."
+
+DuckDuckGo:
+  industry: Privacy 
+  url: https://www.duckduckgo.com/
+  github: https://github.com/duckduckgo
+  description: "Privacy focused products" 
 
 JetBrains:
   industry: Software
