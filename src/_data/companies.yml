@@ -7,6 +7,18 @@
 #   location:
 #   description: "Company description and how Kotlin is used"
 
+Komoot:
+  industry: Hobby
+  url: https://www.komoot.com/
+  description: Route planning app
+  github: https://github.com/komoot
+
+Deliveroo:
+  industry: Food & Catering
+  url: https://www.deliveroo.com/
+  description: "Deliveroo is an app that allows you to order from your favourite restaurants"
+  github: https://github.com/deliveroo
+
 Monzo:
   industry: Banking
   url: https://www.monzo.com/
