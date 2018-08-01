@@ -7,6 +7,43 @@
 #   location:
 #   description: "Company description and how Kotlin is used"
 
+Monzo:
+  industry: Banking
+  url: https://www.monzo.com/
+  description: "A online bank"
+  github: https://github.com/monzo
+
+Volvo:
+  industry: Automotive
+  url: https://www.volvocars.com/
+  description: "Swedish car company"
+
+Capital One:
+  industry: Banking
+  url: https://www.capitalone.co.uk/
+  description: "Bank specializing in credit cards"
+
+State Street:
+  industry: Banking
+  url: https://www.statestreet.com/
+  description: "An international banking and investment firm"
+
+HSBC:
+  industry: Banking
+  url: https://www.hsbc.com/
+  description: "HSBC, one of the largest banking and financial services institutions in the world, serves millions of customers through its four Global Businesses."
+
+Barclays:
+  industry: Banking
+  url: https://www.barclays.co.uk/
+  description: "Barclays plc is a British multinational investment bank and financial services company headquartered in London"
+
+Sky:
+  industry: Television
+  url: https://www.sky.com/
+  location: London, UK
+  description: "Cable TV Provider"
+
 Citi:
   industry: Banking
   url: https://citi.com
