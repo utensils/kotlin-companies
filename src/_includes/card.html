@@ -1,6 +1,9 @@
 {% assign category_name=include['data'][site.cards.group_by.name] %}
 {% include function-set_category_path.html name=category_name %}
-<div class="use-theme box">
+<div class="use-theme box{% if include['data']['jobs'] %} has-ribbon{% endif %}">
+  {% if include['data']['jobs'] %}
+    <div class="ribbon is-warning"><b>Hiring!</b></div>
+  {% endif %}
   <div class="content has-text-centered">
     <p class="title is-4 thin"><a href="{{ include['data']['slug'] }}">{{include['data']['name']}}</a></p>
   </div>
@@ -15,6 +18,9 @@
             <span class="icon accent"><i class="{{ item.fa-style }} fa-fw fa-{{ item.fa-icon }}"></i></span> {{ include['data'][item.name] | replace: "http://", "" | replace: "https://", "" | replace: "www.", ""  | truncate: 40 }}<br>
           {% endif %}
         {% endif %}
+      {% endfor %}
+      {% for job in include['data']['jobs'] %}
+        <span class="icon"><i class="fas fa-briefcase"></i></span> <a href="{{ job['url'] }}">{{ job['title'] }}</a><br>
       {% endfor %}
     </p>
   </div>

@@ -18,11 +18,14 @@ $link-hover: $accent3;
 $link-focus: $link-hover;
 $link-active: $link-hover;
 $family-primary: 'Open Sans', sans-serif;
-
+$badge-border-size: 1px;
 @import 'bulma/bulma';
+@import 'bulma-ribbon/bulma-ribbon';
+@import 'bulma-badge/dist/bulma-badge';
 @import 'libs/mixins';
 
 html {
+
   body {
     @include font-smoothing(on);
     background-attachment: fixed, fixed;
@@ -31,27 +34,35 @@ html {
     .burger {
       color: $grey-dark;
     }
+
     .navbar-item{
       font-size: 1em;
     }
+
     .controls {
       box-sizing: initial !important;
     }
+
     .title {
       font-weight: 700;
+
       &.fancy {
         padding-bottom: 10px;
         border-bottom: 5px solid $link-hover;
       }
+
       &.thin {
         font-weight: 400;
       }
     }
+
     .box {
+
       &.use-theme {
         min-height: 350px;
         max-height: 350px;
         overflow: auto;
+
         .info {
           padding: 10px 0px;
           border-bottom: 1px solid $grey-lighter;
@@ -59,14 +70,18 @@ html {
         }
       }
     }
+
     footer {
       color: #fff;
+
       a {
         color: #fff;
+
         &:hover{
           color: lighten($accent, 40%);
         }
       }
+
       strong {
         color: #fff;
       }
@@ -75,9 +90,11 @@ html {
     #search-section {
       display: none;
     }
+
     .search{
       background-color: $grey-dark;
       color: #fff;
+
       input[type="text"] {
         border: 0px;
         border-bottom: 4px solid #fff;
@@ -85,15 +102,18 @@ html {
         @include placeholder-color(#fff);
         font-size: 3em;
       }
+
       .search-hide {
         cursor: pointer !important;
         pointer-events: auto !important;
         height: 100% !important;
       }
+
       li {
         font-size: 1.2em;
         line-height: 2em;
       }
+
       a{
         color: #aaa;
       }

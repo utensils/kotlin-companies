@@ -37,7 +37,7 @@ Capital One:
 
 State Street:
   industry: Banking
-  url: https://www.statestreet.com/
+  url: https://www.statestreetbank.com/
   description: "An international banking and investment firm"
 
 HSBC:
@@ -75,10 +75,10 @@ Google:
   description: "Search the world's information, including webpages, images, videos and more."
 
 DuckDuckGo:
-  industry: Privacy 
+  industry: Privacy
   url: https://www.duckduckgo.com/
   github: https://github.com/duckduckgo
-  description: "Privacy focused products" 
+  description: "Privacy focused products"
 
 JetBrains:
   industry: Software
@@ -105,7 +105,7 @@ Pinterest:
   url: https://pinterest.com
   blog: https://medium.com/@Pinterest_Engineering
   description: "Pinterest is where people discover new ideas and find inspiration to do the things they love!"
-  
+
 Khan Academy:
   industry: Education
   url: https://www.khanacademy.org

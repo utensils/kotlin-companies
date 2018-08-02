@@ -25,6 +25,9 @@ class CardGenerator < Jekyll::Generator
       site.pages << build_card_page(site, card)
     end
 
+    site.data['hiring'] = hiring_companies(categories, data_file)
+    site.pages << build_hiring_page(site)
+
     site.pages << build_search(site)
   end
 
@@ -66,4 +69,22 @@ class CardGenerator < Jekyll::Generator
     page.data['layout'] = 'cards'
     page
   end
+
+  def build_hiring_page(site)
+    data = site.config["cards"]["data"]
+    category_name = site.config["cards"]["group_by"]["caption"]
+    category_field = site.config["cards"]["group_by"]["name"]
+    page = Jekyll::PageWithoutAFile.new(site, site.source, '/', "hiring.md")
+    page.data[category_field] = 'Hiring'
+    page.data['companies'] = site.data['hiring']
+    page.data['layout'] = 'cards'
+    page
+  end
+
+  def hiring_companies(industries, name)
+    industries
+      .flat_map { |industry| industry[name] } # companies needs to be dynamic
+      .select { |company| company['jobs'] }
+  end
+
 end

@@ -18,6 +18,9 @@ layout: default
                 <span class="icon accent"><i class="{{ item.fa-style }} fa-fw fa-{{ item.fa-icon }}"></i></span> {{ page.card[item.name] | replace: "http://", "" | replace: "https://", "" | replace: "www.", "" | replace_regex: "/$", "" | truncate: 40  }}<br>{% endif %}
               {% endif %}
             {% endfor %}
+            {% for job in page.card.jobs %}
+              <span class="icon"><i class="fas fa-briefcase"></i></span> <a href="{{ job['url'] }}">{{ job['title'] }}</a><br>
+            {% endfor %}
           </div>
           <div class="column">
             <div class="content">
