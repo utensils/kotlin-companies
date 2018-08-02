@@ -32,13 +32,15 @@ class CardGenerator < Jekyll::Generator
   end
 
   def build_search(site)
-    json = site.data[site.config['cards']['data']].map do |card|
-      {
-        'title' => card['name'],
-        'category' => card[site.config['cards']['group_by']['name']],
-        'url' => card['slug'],
-      }
-    end
+    json = site.data[site.config['cards']['data']].sort_by { |i| i['name'].downcase }
+      .map do |card|
+        {
+          'title' => card['name'],
+          'category' => card[site.config['cards']['group_by']['name']],
+          'location' => card['location'].nil? ? ' ' : card['location'],
+          'url' => card['slug'],
+        }
+      end
     page = Jekyll::PageWithoutAFile.new(site, site.source, "./", "search.json")
     page.content = json.to_json
     page
