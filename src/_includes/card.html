@@ -20,7 +20,7 @@
         {% endif %}
       {% endfor %}
       {% for job in include['data']['jobs'] %}
-        <span class="icon"><i class="fas fa-briefcase"></i></span> <a href="{{ job['url'] }}">{{ job['title'] }}</a><br>
+        <span class="icon"><i class="fas fa-briefcase"></i></span> <a href="{{ job['url'] }}">{{ job['name'] }}</a><br>
       {% endfor %}
     </p>
   </div>

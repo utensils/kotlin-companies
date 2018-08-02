@@ -113,3 +113,32 @@ Khan Academy:
   github: https://github.com/Khan
   location: Mountain View, California
   description: "Khan Academy offers a free, world-class education available. Serves some user-facing requests using a Kotlin-based application"
+
+Skookum:
+  industry: Consulting
+  url: https://skookum.com
+  github: https://github.com/Skookum
+  blog: https://skookum.com/blog
+  location: Denver, CO
+  description: "Skookum has the Product, Design, and Engineering know-how to solve your technical challenges"
+
+CyberCoders:
+  industry: Recruitment
+  url: https://www.cybercoders.com/
+  blog: https://www.cybercoders.com/blog/
+  location: Santa Clara, CA
+  description: "CyberCoders is a leading permanent placement recruiting firm. Through our innovative technology and efficient recruiters, CyberCoders helps find the right candidate fast."
+  jobs:
+    - name: Director Solutions Architecture
+      url: https://www.cybercoders.com/director-solutions-architecture-java-kotlin-swift-job-430789
+
+Cirrus CI:
+  industry: SaaS
+  url: https://cirrus-ci.org/
+  github: https://github.com/cirruslabs
+  description: "Cirrus CI is a modern continuous-integration-as-a-service solution that takes advantage of cloud computing services."
+
+Rainist:
+  industry: Financial
+  url: https://rainist.com/
+  description: "With its sophisticated data and algorithm-based financial product curation services, Reynist wants to create financial services that can solve information asymmetry and provide the most definitive value and utility to people's lives."

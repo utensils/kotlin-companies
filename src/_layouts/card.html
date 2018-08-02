@@ -19,7 +19,7 @@ layout: default
               {% endif %}
             {% endfor %}
             {% for job in page.card.jobs %}
-              <span class="icon"><i class="fas fa-briefcase"></i></span> <a href="{{ job['url'] }}">{{ job['title'] }}</a><br>
+              <span class="icon"><i class="fas fa-briefcase"></i></span> <a href="{{ job['url'] }}">{{ job['name'] }}</a><br>
             {% endfor %}
           </div>
           <div class="column">
