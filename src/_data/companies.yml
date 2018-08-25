@@ -142,3 +142,20 @@ Rainist:
   industry: Financial
   url: https://rainist.com/
   description: "With its sophisticated data and algorithm-based financial product curation services, Reynist wants to create financial services that can solve information asymmetry and provide the most definitive value and utility to people's lives."
+
+Bacancy Technology:
+  industry: Consulting
+  url: https://www.bacancytechnology.com/
+  github: https://github.com/bacancy
+  blog: https://www.bacancytechnology.com/blog/
+  description: "Helping organizations to propel further and go beyond developing completely new categories & introducing new products & services faster than ever before."
+
+Citrus Bits:
+  industry: Consulting
+  url: https://citrusbits.com/
+  description: "Each of our in-house futurists, digital strategists, UI/UX designers, and mobile app developers comes from drastically different worlds. Pragmatists and idealists; right brains and left brains; minimalists and kitchen sink throwers – we’ve got them all."
+
+Appsolz:
+  industry: Consulting
+  url: http://appsolz.com/
+  description: "AppSolz has been working consistently towards building mobile applications for both small and enterprise solutions that can transform the way you work with your clients."
